@@ -458,7 +458,7 @@ namespace SharpMap.Web.Wms
         /// </summary>
         /// <param name="url">URL of wms server</param>
         public Client(string url) 
-            : this(url, null, 10000, null, "") { }
+            : this(url, null, 20000, null, "") { }
 
         /// <summary>
         /// This Initializes WMS server and parses the Capabilities request
@@ -466,7 +466,7 @@ namespace SharpMap.Web.Wms
         /// <param name="url">URL of wms server</param>
         /// <param name="proxy">Proxy to use</param>
         public Client(string url, IWebProxy proxy)
-            : this(url, proxy, 10000, null, "") { }
+            : this(url, proxy, 20000, null, "") { }
 
         /// <summary>
         /// This Initializes WMS server and parses the Capabilities request
@@ -484,7 +484,7 @@ namespace SharpMap.Web.Wms
         /// <param name="proxy">Proxy to use</param>
         /// <param name="credentials">Credentials for authenticating against remote WMS-server</param>
         public Client(string url, IWebProxy proxy, ICredentials credentials)
-            : this(url, proxy, 10000, credentials, "") { }
+            : this(url, proxy, 20000, credentials, "") { }
 
         /// <summary>
         /// Initializes WMS server and parses the Capabilities request
@@ -549,7 +549,7 @@ namespace SharpMap.Web.Wms
 
             _baseUrl = "";
             _proxy = null;
-            _timeOut = 10000;
+            _timeOut = 20000;
             _version = "";
             _credentials = null;
 
